@@ -1,0 +1,214 @@
+@font-face{
+    font-family: logoFont;
+    src: url("Fonts/Crassrootsofl-3r7y.ttf");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: contentFont;
+    src: url("Fonts/MechanicalBoldCondensed-4MA6.otf");
+    font-display: swap;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: contentFont, Georgia, 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.logoBG{
+    flex-grow: 1;
+    width: 80vw;
+    min-width: 345px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    position: relative;
+    background: url("Images/background.jpg");
+    background-size: cover;
+    flex-wrap: nowrap;
+}
+
+.logoBG div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+    font-size: 5rem;
+    background-color: gold;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: logoFont, Georgia, 'Times New Roman', Times, serif;
+}
+
+.logoBG div:hover{
+    color:  #55B4B0;
+    background-color: gold;
+}
+
+.logoBG p {
+    position: absolute;
+    bottom: 0px;
+    right: 5px;
+    color: white;
+  }
+
+  .submitSection p{
+    font-size: 2rem;
+  }
+
+
+#logoImg{
+    width: 100px;
+    height: auto;
+}
+
+.formSection{
+    color: gold;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100vw;
+    flex-grow: 2;
+    background-color: black;
+}
+
+.inputSection{
+    padding: 30px 30px 30px 30px;
+    box-shadow: 0px 5px 5px grey;
+    background-color: gold;
+    margin: 50px 20px 20px 50px;
+    color: black;
+    border-radius: 20px;
+    font-size: 1rem;
+    word-spacing: 7px;
+    flex-wrap: wrap;
+}
+
+
+form{
+    flex-direction: column;
+    display: flex;
+    gap: 30px;
+}
+
+form .row{
+   display: flex;
+   justify-content: center;
+   flex-grow: 1;
+   gap: 50px;
+   align-items: center;
+}
+
+form .input{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headerSection{
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex-wrap: wrap;
+    word-spacing: 10px;
+    line-height: 50px;
+}
+
+.headerSection, .submitSection {
+    padding-left: 50px;
+}
+
+a{
+    text-decoration: none;
+    color: rgba(22, 108, 219, 0.76);
+}
+
+a:hover{
+    color: white;
+}
+
+input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gold;
+    margin-top: 3px;
+    font-size: 2rem;
+}
+
+
+input:focus:valid {
+    background-color: rgb(57, 185, 57);
+}
+
+
+input:invalid:focus{
+    background-color: red;
+}
+
+.logIn p{
+    word-spacing: 5px;
+}
+
+button[type='submit']{
+  padding: 10px;
+  font-size: 1.2 rem;
+  background-color: gold;
+  border: 2px solid gold;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  font-size: 2rem;
+  word-spacing: 5px;
+}
+
+
+button[type='submit']:hover{
+    background-color: black;
+    color: gold;
+}
+
+
+@media screen and (max-width: 850px) {
+  
+    .container{
+      flex-direction: column;
+    }
+    .logoBG{
+      width: 100vw;
+      height: 20rem;
+    }
+
+    .inputSection{
+        padding: 10px;
+        margin: auto;
+    }
+
+    button[type='submit']{
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+
+     
+      
+
+
+    
+    input{
+        font-size: 10px;
+    }
+  }
+
